@@ -18,33 +18,33 @@ const journalEntries = [
 // ****declaring an empty array to store future journal entries***
 emptyArray = [];
 // ****looping through each component of the journalEntries array  and pushing them into the emptyArray****
-for (i=0; i < journalEntries.length, i++){
+for (i=0; i < journalEntries.length; i++){
     emptyArray.push(journalEntries[i]);
 }
 // *********declaring a function for each component of the journal entry - and returning each of them to their own HTML components*********
-const concept = (journalConcept) => {
+const conceptTitle = (journalConcept) => {
     return `<h1>${journalConcept}</h1>`
     
 }
-const entry = (journalEntry) => {
+const entryParagraph = (journalEntry) => {
     return `<p>${journalEntry}</p>`
     
 }
-const mood = (journalMood) => {
+const moodParagraph = (journalMood) => {
     return `<p>${journalMood}</p>`
     
 }
-const date = (journalDate) => {
+const dateParagraph = (journalDate) => {
     return `<p>${journalDate}</p>`
     
 }
 // *******creating a function to compile all the journalEntries data into one function*******
 
 const futureJournalInput = (concept, entry, mood, date) => {
-    const futureConcept = concept(concept);
-    const futureEntry = entry(entry);
-    const futureMood = mood(mood);
-    const futureDate = date(date);
+    const futureConcept = conceptTitle(concept);
+    const futureEntry = entryParagraph(entry);
+    const futureMood = moodParagraph(mood);
+    const futureDate = dateParagraph(date);
     return `${futureConcept} ${futureEntry} ${futureMood} ${futureDate}`
 }
 // *********turn into html string to be displayed on the DOM**********

@@ -1,0 +1,17 @@
+{
+    "journalEntries": [
+    {
+        "date": "07/24/2018",
+        "concept": "Array methods",
+        "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
+        "mood": "Ok"
+},
+    {
+        "date": "02/04/2019",
+        "concept": "event listeners",
+        "entry": "Went over the event chapter in Javascript. Learned some new ways to add various click and scroll listeners",
+        "mood": "Ok"
+    }
+    
+    ]
+}
